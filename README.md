@@ -1,7 +1,6 @@
 # Flashcards
 
-### Flashcards é um projeto da trilha desenvolvedor Frontend da JetBrains Academy
-
+### Flashcards é um projeto da trilha desenvolvedor Frontend
 <p>Este projeto é ótimo para quem precisa de um ponto de partida. Seu objetivo é criar uma página estilizada com flashcards, cada um contendo uma pergunta de um lado e a resposta do outro. Você pode escolher qualquer assunto que desejar para seus flashcards!</p>
 
 ### Resultados da aprendizagem
