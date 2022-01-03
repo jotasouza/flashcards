@@ -1,0 +1,97 @@
+/*-------- RESET CSS ----------*/
+html, body, div, p, form, footer{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html, body, div, p, form, footer{
+    font-size: 100%;
+}
+
+body{
+    background-image: url("mapa-mundi.jpg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: top 80px center;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 2em;
+    color: #594f4f;
+    text-align: center;
+}
+p{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ff9934;
+    text-align: center;
+    margin-top: 18px;
+}
+.quiz--area{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 23.5%;
+    right: 23.5%;
+    top: calc(1% + 6vh);
+    border-radius: 1%;
+    height: 560px;
+    padding: 30px;
+}
+
+.flash--cards{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card1, .card2, .card3, .card4, .card5,
+.card6, .card7, .card8, .card9{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover,
+.card6:hover, .card7:hover, .card8:hover, .card9:hover{
+    transform: rotateY(180deg);
+}
+
+.front{
+    background-color: #ececdd;
+    z-index: 2;
+}
+
+.back{
+    background-color: #ff9934;
+    transform: rotateY(180deg);
+}
+
+.back>p{
+    color: #ececdd;
+}
